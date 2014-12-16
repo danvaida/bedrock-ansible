@@ -9,13 +9,9 @@
     - { role: fail2ban, tags: [fail2ban] }
     - { role: ferm, tags: [ferm] }
     - { role: mariadb, tags: [mariadb] }
-    - { role: ssmtp, tags: [ssmtp mail] }
-    - { role: php, when: not hhvm, tags: [php] }
-    - { role: hhvm, when: hhvm, tags: [hhvm] }
+    - { role: php, tags: [php] }
     - { role: nginx, tags: [nginx] }
     - { role: memcached, tags: [memcached] }
     - { role: composer, tags: [composer] }
     - { role: wp-cli, tags: [wp-cli] }
     - { role: wordpress-setup, tags: [wordpress, wordpress-setup] }
-    - { role: wordpress-deploy, tags: [wordpress, deploy, wordpress-deploy] }
-    - { role: wordpress-install, tags: [wordpress, wordpress-install] }
