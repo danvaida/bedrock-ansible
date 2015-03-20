@@ -7,3 +7,4 @@ install:
 script:
   - ansible-playbook --syntax-check -i hosts/development dev.yml
   - ansible-playbook --syntax-check -i hosts/development server.yml
+  - ansible-playbook --syntax-check -i hosts/development secure-root.yml
